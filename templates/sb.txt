@@ -1,0 +1,16 @@
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { ComponentProps } from "react";
+import { __placeholder__ } from "./__placeholder__";
+
+
+export default {
+  title: __placeholder__.name,
+  component: __placeholder__,
+} as ComponentMeta<typeof __placeholder__>;
+
+const Template: ComponentStory<typeof __placeholder__> = (args) => <__placeholder__ {...args} />;
+
+const defaultArgs: ComponentProps<typeof __placeholder__> = {};
+
+export const Primary = Template.bind({});
+Primary.args = { ...defaultArgs };

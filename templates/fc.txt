@@ -1,0 +1,11 @@
+import React, { FC } from "react";
+
+type Props = {};
+
+export const __placeholder__: FC<Props> = ({}) => {
+  return (
+    <div>
+      <div>__placeholder__</div>
+    </div>
+  );
+};
