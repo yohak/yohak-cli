@@ -12,4 +12,4 @@ export const __PlaceHolder__: FC<Props> = ({ css, className }) => {
   );
 };
 
-export const __placeHolder__ = css``;
+const __placeHolder__ = css``;
