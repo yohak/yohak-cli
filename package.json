@@ -1,18 +1,21 @@
 {
   "name": "yohak-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "CLI for YOHAK LLC",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-publish": "npm version patch"
   },
   "bin": {
     "yohak-cli": "bin/yohak-cli.mjs"
   },
+  "repository": "https://github.com/yohak/yohak-cli",
   "author": "Satoshi Onoda",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "cac": "^6.7.12"
+    "cac": "^6.7.12",
+    "change-case": "^4.1.2"
   },
   "devDependencies": {
     "prettier": "^2.5.1"

@@ -1,11 +1,15 @@
+import { css } from "@emotion/react";
 import React, { FC } from "react";
+import { AcceptsEmotion } from "yohak-tools";
 
-type Props = {};
+type Props = {} & AcceptsEmotion;
 
-export const __placeholder__: FC<Props> = ({}) => {
+export const __PlaceHolder__: FC<Props> = ({ css, className }) => {
   return (
-    <div>
-      <div>__placeholder__</div>
+    <div css={[__placeHolder__, css]} className={className}>
+      <div>__PlaceHolder__</div>
     </div>
   );
 };
+
+export const __placeHolder__ = css``;
