@@ -26,7 +26,7 @@ const replace = (templateName, baseName, extension, pascalCaseName = true) => {
   const replaced = data
     .replace(/__PlaceHolder__/g, pascalCase(baseName))
     .replace(/__placeHolder__/g, camelCase(baseName));
-  const fileName = pascalCaseName ? pascalCase(baseName) : camelCase(baseName) + extension;
+  const fileName = (pascalCaseName ? pascalCase(baseName) : camelCase(baseName)) + extension;
   const resultPath = join(process.cwd(), fileName);
   writeFileSync(resultPath, replaced);
   console.log("created:", fileName);
