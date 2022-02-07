@@ -1,0 +1,26 @@
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { ComponentProps, FC, useEffect } from "react";
+import { __PlaceHolder__ } from "./__PlaceHolder__";
+
+type WrapperProps = {
+
+} & ComponentProps<typeof __PlaceHolder__>;
+const Wrapper: FC<WrapperProps> = (args) => {
+  useEffect(() => {
+
+  }, []);
+  return <__PlaceHolder__ {...args} />;
+};
+
+export default {
+  title: __PlaceHolder__.name,
+  component: Wrapper,
+} as ComponentMeta<typeof Wrapper>;
+
+const Template: ComponentStory<typeof Wrapper> = (args) => <Wrapper {...args} />;
+
+const defaultArgs: ComponentProps<typeof Wrapper> = {
+};
+
+export const Primary = Template.bind({});
+Primary.args = { ...defaultArgs };

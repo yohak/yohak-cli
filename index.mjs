@@ -14,6 +14,9 @@ const execute = () => {
   cli.command("recoil <baseName>", "create recoil atom").action((baseName) => {
     replace("recoil.txt", baseName, `.ts`, false);
   });
+  cli.command("sb-recoil <baseName>", "create storybook story with recoil").action((baseName) => {
+    replace("sb-recoil.txt", baseName, `.tsx`);
+  });
   cli.help();
   cli.parse();
 };
