@@ -1,0 +1,12 @@
+import { atom, useRecoilValue, useSetRecoilState } from "recoil";
+
+const __placeHolder__ = atom<never>({ key: "__placeHolder__", default: never });
+
+export const use__PlaceHolder__State = () => {
+  return useRecoilValue(__placeHolder__);
+};
+
+export const use__PlaceHolder__Mutators = () => {
+  const set__PlaceHolder__ = useSetRecoilState(__placeHolder__);
+  return { set__PlaceHolder__ };
+};

@@ -2,7 +2,6 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { ComponentProps } from "react";
 import { __PlaceHolder__ } from "./__PlaceHolder__";
 
-
 export default {
   title: __PlaceHolder__.name,
   component: __PlaceHolder__,
