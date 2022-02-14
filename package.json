@@ -1,6 +1,6 @@
 {
   "name": "yohak-cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "CLI for YOHAK LLC",
   "main": "index.mjs",
   "scripts": {
