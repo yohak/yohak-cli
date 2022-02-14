@@ -15,7 +15,7 @@ const execute = () => {
     replace("recoil.txt", baseName, `.ts`, false);
   });
   cli.command("sb-recoil <baseName>", "create storybook story with recoil").action((baseName) => {
-    replace("sb-recoil.txt", baseName, `.tsx`);
+    replace("sb-recoil.txt", baseName, `.stories.tsx`);
   });
   cli.help();
   cli.parse();
