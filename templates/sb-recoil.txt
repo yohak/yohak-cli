@@ -13,7 +13,6 @@ const Wrapper: FC<WrapperProps> = (args) => {
 };
 
 export default {
-  title: __PlaceHolder__.name,
   component: Wrapper,
 } as ComponentMeta<typeof Wrapper>;
 

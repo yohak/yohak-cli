@@ -3,7 +3,6 @@ import { ComponentProps } from "react";
 import { __PlaceHolder__ } from "./__PlaceHolder__";
 
 export default {
-  title: __PlaceHolder__.name,
   component: __PlaceHolder__,
 } as ComponentMeta<typeof __PlaceHolder__>;
 
